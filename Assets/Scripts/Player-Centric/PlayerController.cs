@@ -57,10 +57,6 @@ public class PlayerController : MonoBehaviour
             // Applies the player input to their direction of movement
             moveDirection += this.forward * moveInput.y;
         }
-        /*else if (moveInput.y == 0.0 && rb.linearVelocity.y != 0.0) // If player isn't holding down direction and the truck still has momentum, the truck will be brought to a stop by applying reverse momentum
-        {
-            moveDirection -= this.forward;
-        }*/
 
         // Applies the player input to their direction of rotation
         Vector3 turnDirection = Vector3.zero;
